@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 Add any new changes to the top(right below this line).
+ 
+ - 2020-11-25
+     - Role: edxapp
+        - Updated renderer options to reference `common.djangoapps.edxmako`
+          instead of `edxmako`. The latter import path is deprecated.
+          Other than removing warnings, there should be no functional
+          change.
 
  - 2020-11-20
      - Role: edxapp
