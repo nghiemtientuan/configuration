@@ -133,8 +133,8 @@ EDXAPP_EMAIL_BACKEND: 'django.core.mail.backends.smtp.EmailBackend'
 EDXAPP_EMAIL_HOST: 'localhost'
 EDXAPP_EMAIL_PORT: 25
 EDXAPP_EMAIL_USE_TLS: False
-EDXAPP_EMAIL_HOST_USER: ''
-EDXAPP_EMAIL_HOST_PASSWORD: ''
+EDXAPP_EMAIL_HOST_USER: 'nghiemthihachi@gmail.com'
+EDXAPP_EMAIL_HOST_PASSWORD: 'khongcomatkhau'
 
 EDXAPP_AWS_SES_REGION_NAME: "us-east-1"
 EDXAPP_AWS_SES_REGION_ENDPOINT: "email.us-east-1.amazonaws.com"
@@ -184,9 +184,9 @@ EDXAPP_PARTNER_SUPPORT_EMAIL: ''
 # ISO-8601 formatted date string, or null
 EDXAPP_AUDIT_CERT_CUTOFF_DATE: null
 
-EDXAPP_PLATFORM_NAME: 'Your Platform Name Here'
-EDXAPP_PLATFORM_DESCRIPTION: 'Your Platform Description Here'
-EDXAPP_STUDIO_NAME: 'Studio'
+EDXAPP_PLATFORM_NAME: 'BKEdx'
+EDXAPP_PLATFORM_DESCRIPTION: 'This is platform of BK university'
+EDXAPP_STUDIO_NAME: 'BKEdx Studio'
 EDXAPP_STUDIO_SHORT_NAME: 'Studio'
 EDXAPP_ANALYTICS_DASHBOARD_NAME: "{{ EDXAPP_PLATFORM_NAME }} Insights"
 
@@ -361,7 +361,7 @@ EDXAPP_LANGUAGE_COOKIE: 'openedx-language-preference'
 EDXAPP_CERTIFICATE_TEMPLATE_LANGUAGES:
   'en': 'English'
   'es': 'Español'
-EDXAPP_TIME_ZONE: 'America/New_York'
+EDXAPP_TIME_ZONE: 'Asia/Ho_Chi_Minh'
 
 EDXAPP_HELP_TOKENS_BOOKS:
     learner: "http://edx.readthedocs.io/projects/open-edx-learner-guide"
@@ -595,7 +595,7 @@ EDXAPP_COURSES_WITH_UNSAFE_CODE: []
 EDXAPP_SESSION_COOKIE_DOMAIN: ""
 EDXAPP_SESSION_COOKIE_NAME: "sessionid"
 
-# django-session-cookie middleware 
+# django-session-cookie middleware
 EDXAPP_DCS_SESSION_COOKIE_SAMESITE: "{{ 'None' if NGINX_ENABLE_SSL | default(False) else 'Lax' }}"
 EDXAPP_DCS_SESSION_COOKIE_SAMESITE_FORCE_ALL: True
 
